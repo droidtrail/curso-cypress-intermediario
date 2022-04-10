@@ -15,7 +15,7 @@ describe('Create Issue', () => {
 
     before(() => {
         cy.login()
-        cy.gui_createProject(issue.project)
+        cy.api_createProject(issue.project)
     });
     it('successfully', () => {
         cy.gui_createIssue(issue)
